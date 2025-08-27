@@ -1,0 +1,35 @@
+footer{
+    border: gray 1px solid;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 8px;
+    padding: 10px;
+}
+.footer-title{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.footer-sub{
+    margin-top: 5px;
+    font-size: medium;
+    color: rgb(165, 165, 165);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-bottom{
+    text-align: center;
+    font-size: small;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 20px;
+}
+.footer-copy{
+    font-size: medium;
+    color:rgb(165, 165, 165);
+    font-weight: 600;
+}
