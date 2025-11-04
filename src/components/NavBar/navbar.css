@@ -8,41 +8,35 @@ nav{
     display: flex;
     justify-content: space-between;
     top:0;
-    position: sticky;
+    position:sticky;
+    background-color: #fff;
+
 }
 .Logo{
-    margin: 10px 0 0 20px;
     font-family: 'Segoe UI', sans-serif;
     color: rgba(150, 7, 232, 1);
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 
 .Links{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
     font-family: 'Segoe UI', sans-serif;
-    margin-bottom: 10px;
+    background-color: #fff;
 }
 .elemento{
     padding: 10px;
     color:rgba(150, 7, 232, 1);
 }
 
-li:hover{
-    color: rgba(150, 7, 232, 0.2);
-    border-radius: 10px;
-    cursor: pointer;
-}
 
-li{
-    font-weight: bold;
-}
-
-.input{
-    margin: 10px 20px 0 0;
-    font-family: 'Segoe UI', sans-serif;
-}
 
 button{
+    margin: 10px;
     border-radius: 5px;
     background-color: #fff;
     width: 70px;
@@ -59,5 +53,5 @@ button:hover{
 
 a{
     text-decoration: none;
-    color: inherit;
+    color: rgba(150, 7, 232, 1);
 }

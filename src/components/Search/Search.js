@@ -1,18 +1,31 @@
+import React, { useState } from 'react';
+
 import './search.css'
-function Search(){
+
+export default function Search({ onSearch }){
+    const [busca, setBusca] = useState("");
+
+    const handleSearch = (e) => {
+        e.preventDefault();
+        onSearch(busca); // Passa o valor da busca para ExportCard
+    }
+
     return(
         <div className='container'>
             <div className='Subcontainer'>
                 <h2 id='home'>Encontre o Espaço perfeito para seu Evento</h2>
-                <form>
-                    <input type="text" placeholder='Localização'/>
-                    <input type="date" />
-                    <input type="time" />
-                    <input type="time" />
+                <form onSubmit={handleSearch}>
+                    <input
+                        type="text"
+                        placeholder='Localização'
+                        value={busca}
+                        onChange={(e) => setBusca(e.target.value)}
+                    />
+                    <div className='container-button'>
+                        <button type="submit">Buscar</button>
+                    </div>
                 </form>
             </div>
         </div>
     )
 }
-
-export default Search;

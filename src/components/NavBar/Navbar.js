@@ -1,24 +1,31 @@
-import './navbar.css'
-function NavBar() {
-    return (
-        <nav>
-            <div className='Logo' >
-                <h2>Reserv.ai</h2>
-            </div>
+import { Link, NavLink } from "react-router-dom";
+import "./navbar.css";
 
-            <div>
-                <ul className='Links'>
-                    <li className='elemento'><a href='#home'>Home</a></li>
-                    <li className='elemento'><a href='#sobre'>Sobre</a></li>
-                    <li className='elemento'><a href='#servicos'>Serviços</a></li>
-                </ul>
-            </div>
+export default function Navbar() {
+  return (
+    <nav className="navbar">
+      <Link to="/">
+        <h2 className="Logo">Reserv.ai</h2>
+      </Link>
 
-            <div className='input'>
-                <button>Login</button>
-            </div>
-        </nav>
-    );
+
+      <div className="Links">
+        <NavLink
+          to="/"
+          className="elemento"
+        >
+          Início
+        </NavLink>
+        <NavLink
+          to="/sobre"
+          className="elemento"
+        >
+          Sobre
+        </NavLink>
+      </div>
+
+
+      <button>Entrar</button>
+    </nav>
+  );
 }
-
-export default NavBar;

@@ -11,6 +11,13 @@
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 80px;
-    
-    
+}
+
+.searchCard-container{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
 }

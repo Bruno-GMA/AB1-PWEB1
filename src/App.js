@@ -1,26 +1,21 @@
-import './App.css';
 
-import NavBar from './components/NavBar/Navbar';
-import Search from './components/Search/Search';
-import ExportCard from './components/ExportCard/ExportCard';
-import Sobre from './components/Sobre/Sobre';
-import Footer from './components/Footer/Footer';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/NavBar/Navbar";
+import Home from "./paginas/Home/home";
+import Sobre from "./paginas/Sobre/Sobre";
 
 
-function App() {
+
+export default function App() {
   return (
-    <div>
-      <NavBar />
-      <div className='primeira-parte'>
-        <Search />
-        <ExportCard />
-      </div>
-      <div className='segunda-parte'>
-        <Sobre />
-      </div>
-      <Footer />
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<Sobre />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
-
-export default App;
