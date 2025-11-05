@@ -5,7 +5,6 @@ import Home from "./paginas/Home/home";
 import Servicos from "./paginas/Servicos/Servicos";
 import Sobre from "./paginas/Sobre/Sobre";
 
-import Footer from "./components/Footer/Footer"
 
 
 
