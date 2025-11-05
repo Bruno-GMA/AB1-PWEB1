@@ -21,7 +21,7 @@
     background-color: aliceblue;
 }
 
-form{
+.form-search{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@ form{
     gap: 10px;
 }
 
-input{
+.input-search{
     border: 2px solid rgb(165, 165, 165);
     border-radius: 5px;
 }

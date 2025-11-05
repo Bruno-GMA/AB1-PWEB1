@@ -22,6 +22,13 @@ export default function Navbar() {
         >
           Sobre
         </NavLink>
+
+        <NavLink
+          to="/servicos"
+          className="elemento"
+        >
+          Serviços
+        </NavLink>
       </div>
 
 

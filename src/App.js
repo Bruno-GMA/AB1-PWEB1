@@ -2,7 +2,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/NavBar/Navbar";
 import Home from "./paginas/Home/home";
+import Servicos from "./paginas/Servicos/Servicos";
 import Sobre from "./paginas/Sobre/Sobre";
+
+import Footer from "./components/Footer/Footer"
 
 
 
@@ -14,6 +17,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sobre" element={<Sobre />} />
+          <Route path="/servicos" element={<Servicos />} />
         </Routes>
       </Router>
     </>

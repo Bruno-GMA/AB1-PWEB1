@@ -1,7 +1,7 @@
 import './footer.css';
 function Footer() {
     return(
-        <footer id='servicos'>
+        <footer>
             <div className='footer-grid'>
                 <div>
                     <h3 className='footer-title'>Reserv.ai</h3>

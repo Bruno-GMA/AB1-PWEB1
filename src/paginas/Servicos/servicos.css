@@ -1,0 +1,22 @@
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  min-height: 80vh;
+}
+.form-servicos{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #f4f4f4;
+}
+
+.container-cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
